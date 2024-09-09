@@ -27,17 +27,28 @@ console.log("Eu vou fazer " + idade + " anos, ano que vem, em " + anoAtual + ". 
 
 //Agência de viagens Hawaii Paris Nova York Rio de Janeiro Tokyo
 const listaDeDestinos = new Array(
-  "Hawaii",
-  "Paris",
-  "Nova York",
-  "Rio de Janeiro",
-  "Tokyo"
+  " Hawaii",
+  " Paris",
+  " Nova York",
+  " Rio de Janeiro",
+  " Tokyo"
   );
 
 console.log(listaDeDestinos);
 console.log(listaDeDestinos[3]);
-listaDeDestinos.push("Coronel Vivida");
+listaDeDestinos.push(" Coronel Vivida");
 console.log(listaDeDestinos);
-listaDeDestinos.push("São Paulo");
-listaDeDestinos.push("China");
-listaDeDestinos.push("Japão");
+listaDeDestinos.push(" São Paulo");
+listaDeDestinos.push(" China");
+listaDeDestinos.push(" Japão");
+
+const idaadeComprador = 18;
+
+if (idaadeComprador >=18) {
+  console.log("Comprador maior de idade");
+  console.log ("destinos disponiveis: " + listaDeDestinos)
+} else
+{
+  console.log("Comprador menor de idade");
+  console.log("Produto diponiel apenas para maiores de idade");
+}
