@@ -1,5 +1,14 @@
-const meuNome = "Cauã";
+const prompt = require('prompt-sync');
+const entrada = prompt();
 
+function obterInformacoesComprador() {
+  var idadeComprador = entrada("Qual a sua idade?");
+  var nomeComprador = entrada("Qual o seu nome?");
+  return { idadeComprador, nomeComprador };
+}
+
+
+const meuNome = "Cauã";
 const altura = "1.75";
 const peso = "65";
 const sexo = "Masculino";
@@ -42,13 +51,17 @@ listaDeDestinos.push(" São Paulo");
 listaDeDestinos.push(" China");
 listaDeDestinos.push(" Japão");
 
-const idaadeComprador = 18;
+var idadeComprador = entrada("Qual a sua idade?");
+var nomeComprador = entrada("Qual o seu nome?");
+const { idadeComprador, nomeComprador } = obterInformacoesComprador();
 
-if (idaadeComprador >=18) {
+if (idadeComprador >=18) {
+  console.log("Olá senhor(a) " + nomeComprador );
   console.log("Comprador maior de idade");
   console.log ("destinos disponiveis: " + listaDeDestinos)
 } else
 {
+  console.log("Olá senhor(a) " + nomeComprador );
   console.log("Comprador menor de idade");
   console.log("Produto diponiel apenas para maiores de idade");
 }
